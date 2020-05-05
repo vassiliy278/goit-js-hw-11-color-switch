@@ -23,7 +23,7 @@ const switcher = {
     start() {
         if (isActive) { return }
         process = setInterval(() => {
-            const randomIdx = randomIntegerFromInterval(0,7);
+            const randomIdx = randomIntegerFromInterval(0, colors.length);
             body.style = `background-color: ${colors[randomIdx]}`;
             isActive = true;
             console.log('Switched!');
